@@ -7,4 +7,8 @@ b) 2 (pt prima prop)
    3 (pt a 2 a prop)
 
 Solutie: convertim semnele de punctuatie cu spatii si utilizam split()'''
-s = input('s: ')
+# s = input('s: ')
+sir = "test"
+for c in sir:
+ print(c, sep="1")
+#Se va afișa: t e s t
