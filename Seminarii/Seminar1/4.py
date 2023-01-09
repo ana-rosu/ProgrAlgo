@@ -5,10 +5,18 @@ trebuie comutata pt a obtine nr y'''
 x = int(input('x: '))
 y = int(input('y: '))
 
-print(bin(x).replace('0b', ''))
-print(bin(y).replace('0b', ''))
-
+# raspunsul este nr de biti nenuli din repr binara a x ^ y
 dif = x ^ y
 
-print(bin(dif).replace('0b', '').count('1'))
+nr = 0
+while dif:
+    dif = dif & (dif-1)
+    nr += 1
+print(nr)
 
+'''
+x = 12 = 01100
+y = 20 = 10100
+x ^ y  = 11000
+R: 2
+'''

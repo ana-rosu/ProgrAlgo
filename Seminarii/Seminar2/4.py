@@ -7,10 +7,10 @@ s = input('Dati sir: ')
 n = len(s)
 
 for d in range(1, n // 2 + 1):
-    if n%d == 0:
-        t = s[:d] * (n//d)
+    if n % d == 0:
+        t = s[:d] * (n // d)
         if t == s:
-            print('t = ', s[:d], '\nk = ', n//d)
+            print('t = ', s[:d], '\nk = ', n // d)
             break
 else:
     print('Imposibil!')

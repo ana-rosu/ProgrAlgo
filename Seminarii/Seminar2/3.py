@@ -6,6 +6,7 @@ Cuvintele distincte de lungimea maxima 5 sunt "prune", "gutui", "verzi", "multe"
 s = input('Propozitia sau fraza: ')
 
 separatori = ',.:;?!'
+
 for x in separatori:
     s = s.replace(x, '')
 

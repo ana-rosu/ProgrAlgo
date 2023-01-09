@@ -14,4 +14,8 @@ for i in range(n):
     if cuv.endswith(w[-p:]):
         sol = sol + cuv + " "
 
-print(sol)
+if(sol != ""):
+    print(sol)
+else:
+    print(("Niciun cuvânt dat nu este " + str(p) + "-rimă " +
+ "a cuvântului '" + w + "'!"))
