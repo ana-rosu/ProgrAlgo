@@ -21,7 +21,7 @@ def modifica_matrice(matrice, ch, x=0, y=0):
         # interschimba diag sec cu diag princ
         # dp=a[i][i] ds=a[i][n-i-1]
         for i in range(n):
-            matrice[i][i], matrice[i][-i - 1] = matrice[i][n - i - 1], matrice[i][i]
+            matrice[i][i], matrice[i][n -i - 1] = matrice[i][n - i - 1], matrice[i][i]
         return matrice
 
 

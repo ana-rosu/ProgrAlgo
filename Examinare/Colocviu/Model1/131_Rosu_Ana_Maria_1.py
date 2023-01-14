@@ -5,6 +5,7 @@ f = open('text.in')
 sir = f.read()
 sir = sir.lower()
 f.close()
+
 semne = ',.:;!? '
 for s in semne:
     sir = sir.replace(s, '')

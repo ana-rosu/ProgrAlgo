@@ -1,6 +1,5 @@
 with open('autori.in') as f:
     aux = [int(nr) for nr in f.readline().split()]
-    cnt = 0
     d ={}
     date = f.readlines()
     for linie in date[:aux[0]]:
@@ -25,9 +24,10 @@ def sterge_carte(dict, cod_carte):
                 return key[1]
     return None
 
-autor = sterge_carte(d, 131)
+autor = sterge_carte(d, int(input()))
 if autor != None:
     print(f'Cartea a fost scrisa de {autor}')
+    print(d)
 else:
     print('Cartea nu exista')
 
