@@ -32,4 +32,3 @@ for linie in T:
     for el in linie:
         print(el, end=' ')
     print()
-

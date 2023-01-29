@@ -1,0 +1,16 @@
+1. Rezolvați problema programării spectacolelor într-o singură sală utilizând o coadă cu
+priorități.
+
+2. Se consideră o listă sortată crescător de numere întregi. Scrieți o funcție cu
+complexitate minimă care să furnizeze numărul de apariții ale unei valori în listă. De
+exemplu, în lista [1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 5] valoarea 2 apare de 4 ori.
+Indicație de rezolvare:
+Scriem două funcții bazate pe căutarea binară, una pentru a determina prima poziție pe
+care apare valoarea căutată în lista dată și una pentru a determina ultima poziție pe care
+apare valoarea în listă. Apelăm prima funcție și, dacă valoarea căutată apare în listă,
+apelăm și a doua funcție, după care calculăm diferența dintre cele două poziții. Rezolvarea
+completă a acestei probleme, având complexitatea 𝒪(log2 𝑛), poate fi găsită aici:
+https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-asorted-array/.
+
+3. Scrieți un algoritm de tip Divide et Impera pentru a rezolva problema turnurilor din
+Hanoi (https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/).
